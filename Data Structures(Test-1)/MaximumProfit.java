@@ -18,13 +18,7 @@ public class solution {
 		{	int max = 0;
 			int count = 0;
 			element = budget[i];
-			for(int j = 0;j<budget.length;j++)
-			{
-				if(element<=budget[j])
-				{
-					count++;
-				}
-			}
+			count = budget.length-i;
 			 max = count * element;
 			if(profit<max)
 			{
@@ -32,6 +26,5 @@ public class solution {
 			}
 		}
 		return profit;
-
 	}
 }
