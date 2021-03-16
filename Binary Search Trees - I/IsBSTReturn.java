@@ -1,4 +1,4 @@
-public class IsBSTReturn()
+public class IsBSTReturn
 {
   int min;
   int max;
