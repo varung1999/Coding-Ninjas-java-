@@ -26,31 +26,6 @@ public class ShortestCommonSuperSequence {
 			}
 		}
 		
-		String ans = "";
-		
-		int i = n,j=m;
-		
-		while(i>0 && j>0)
-		{
-			if(x.charAt(i-1)==y.charAt(j-1))
-			{
-				ans+=x.charAt(i-1);
-				i--;
-				j--;
-			}
-			else
-			{
-				if(dp[i-1][j]>dp[i][j-1])
-				{
-					i--;
-				}
-				else
-				{
-					j--;
-				}
-			}
-		}
-		
 		int tcount = m+n - dp[n][m];
 		return tcount;
 	}
