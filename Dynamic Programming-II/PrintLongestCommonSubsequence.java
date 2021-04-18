@@ -1,6 +1,6 @@
 package dp_av;
 
-public class PrintLongestCommonSubstring {
+public class PrintLongestCommonSubsequence {
 	
 	public static String printlcs(String x,String y)
 	{
